@@ -46,7 +46,7 @@ namespace ProducerRestAPI.Helpers
             );
 
             //Publish Message
-            byte[] messageBodyBytes = System.Text.Encoding.UTF8.GetBytes("Hello, world!");
+            byte[] messageBodyBytes = System.Text.Encoding.UTF8.GetBytes(data);
 
             BasicProperties props = new()
             {
